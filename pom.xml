@@ -5,10 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.demo.springcloud</groupId>
-    <artifactId>microservicecloud</artifactId>
+    <artifactId>microservice-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>microservicecloud-api</module>
+        <module>microservice-cloud-api</module>
+        <module>microservice-cloud-provider-dept-8001</module>
     </modules>
     <packaging>pom</packaging>
 
