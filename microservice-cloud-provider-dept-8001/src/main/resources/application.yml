@@ -9,7 +9,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cloudDB01
     username: root
-    password: 1qaz@WSX
+    password: 123456
     dbcp2:
       min-idle: 5                                 # 數據庫連接池的最小維持連接數
       initial-size: 5                             # 初始化連接數
@@ -17,3 +17,13 @@ spring:
       max-wait-millis: 200                        # 等待連接獲取的最大超時時間
   jpa:
     show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+info:
+  app.name: microservicecloud
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
