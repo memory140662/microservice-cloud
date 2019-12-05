@@ -16,7 +16,8 @@ import java.util.List;
 @SuppressWarnings({"unchecked"})
 public class DeptController {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
 
     @NonNull private RestTemplate restTemplate;
 
@@ -27,7 +28,7 @@ public class DeptController {
 
     @GetMapping("/consumer/dept/get/{id}")
     public Dept get(@PathVariable Long id) {
-        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get" + id, Dept.class);
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id, Dept.class);
     }
 
     @GetMapping("/consumer/dept/list")
