@@ -13,7 +13,7 @@ import java.util.List;
 
 @Data
 @RequiredArgsConstructor
-@Service("deptService")
+@Service
 @Transactional
 public class DeptServiceImpl implements DeptService {
 
