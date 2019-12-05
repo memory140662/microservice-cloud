@@ -1,7 +1,7 @@
 package com.demo.springcloud.controller;
 
 import com.demo.springcloud.entities.Dept;
-import com.demo.springcloud.service.DeptService;
+import com.demo.springcloud.service.DeptClientService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.client.ServiceInstance;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DeptController {
     @NonNull
-    private DeptService deptService;
+    private DeptClientService deptService;
 
     @NonNull
     private DiscoveryClient discoveryClient;

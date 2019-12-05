@@ -2,7 +2,7 @@ package com.demo.springcloud.service.impl;
 
 import com.demo.springcloud.entities.Dept;
 import com.demo.springcloud.repositories.DeptRepository;
-import com.demo.springcloud.service.DeptService;
+import com.demo.springcloud.service.DeptClientService;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service("deptService")
 @Transactional
-public class DeptServiceImpl implements DeptService {
+public class DeptServiceImpl implements DeptClientService {
 
     @NonNull
     private DeptRepository deptRepository;
